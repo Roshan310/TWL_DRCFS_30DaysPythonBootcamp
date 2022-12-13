@@ -6,7 +6,9 @@ The function should read the entire contents of the file and return the contents
 
 def read_file(filename):
     # TODO: Open the file in read-only mode and read its contents. Return the contents of the file.
-    pass
+    with open(filename, 'r') as file:
+        return file.read()
+    
 
 contents = read_file("my_file.txt")
 print(contents)  # Output: "Hello, world!\nI just did my first Assignment of week 2."
